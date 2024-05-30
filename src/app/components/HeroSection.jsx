@@ -15,7 +15,7 @@ const HeroSection = () => {
                         sequence={[
                             'Auréliane Gagliardi',
                             1000,
-                            'Junior front-end developer',
+                            'Jr Front-end developer',
                             1000,
                             'looking for an internship',
                             1000
@@ -26,7 +26,7 @@ const HeroSection = () => {
                     />
                 </h1>
                 <p className='text-[#ADB7BE] text-base sm:text-lg  mb-6 lg:text-xl'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fuga, inventore, consectetur vero quasi ex neque dolorem eligendi assumenda magni, suscipit est. Iure laboriosam consequuntur veritatis error quam ipsam eos!
+                    A curious, creative and driven young woman currently learning at Becode Liège
                 </p>
                 <div>
                     <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">Hire me</button>
