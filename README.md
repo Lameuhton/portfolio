@@ -6,8 +6,8 @@ Repository of my personal portfolio.
 - HTML/CSS
 - Javascript
 - React
-- Node.js
 - Next.js
+- Node.js
 - Tailwind
 - Resend API for contact form
 
