@@ -57,8 +57,8 @@ export const AboutSection = () => {
     <section className='text-white'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
             <Image src="/images/about-image.png" width={500} height={500} />
-            <div className='mtn-4 md:mt)0 text-left flex flex-col h-full'>
-                <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
+            <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
+                <h2 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-4'>About Me</h2>
                 <p className='text-base md:text-lg'>
                   Passionate about computers since childhood, I've explored its various facets for years. My higher education provided knowledge, but it's in front-end development that I found my path. After research, I chose BeCode to become a Front-end Developer. Always seeking improvement, I'm looking for a beginner internship starting in September to apply my skills and create memorable user experiences. Let's build an inspiring digital future together!
                 </p>
@@ -76,3 +76,4 @@ export const AboutSection = () => {
     </section>
   )
 }
+
