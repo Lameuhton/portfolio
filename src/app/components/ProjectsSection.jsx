@@ -1,5 +1,8 @@
-import React from 'react'
+"use client";
+import React, { useState, useRef } from 'react'
 import { ProjectCard } from './ProjectCard'
+import { motion, useInView } from "framer-motion"
+
 
 const projectsData = [
     {
@@ -29,21 +32,31 @@ const projectsData = [
 ]
 
 export const ProjectsSection = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true});
+
+    const cardVariants = {
+        initial: {y: 50, opacity: 0},
+        animate: {y: 0, opacity: 1}
+    }
+
     return (
-        <>
-            <h2 className='text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mt-4 mb-8 md:mb-12'>My projects</h2>
-            <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
-                {projectsData.map((project) => (
-                    <ProjectCard
-                        key={project.id}
-                        title={project.title}
-                        description={project.description}
-                        imgUrl={project.image}
-                        gitUrl={project.gitUrl}
-                        previewUrl={project.previewUrl}
-                    />
+        <section>
+            <h2 className='text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-4 mb-8 md:mb-12'>My projects</h2>
+            <ul ref={ref} className='grid md:grid-cols-3 gap-8 md:gap-12'>
+                {projectsData.map((project, index) => (
+                    <motion.li key={index} variants={cardVariants} inital="initial" animate={isInView ? "animate" : "initial"} transition= {{duration: 0.3, delay: index * 0.4}}>
+                        <ProjectCard
+                            key={project.id}
+                            title={project.title}
+                            description={project.description}
+                            imgUrl={project.image}
+                            gitUrl={project.gitUrl}
+                            previewUrl={project.previewUrl}
+                        />
+                    </motion.li>
                 ))}
-            </div>
-        </>
+            </ul>
+        </section>
     )
 }
