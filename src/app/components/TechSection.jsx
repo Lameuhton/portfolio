@@ -1,8 +1,10 @@
 "use client";
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaHtml5, FaCss3Alt, FaSass, FaJs, FaReact, FaNodeJs, FaPython, FaPhp, FaDatabase, FaLaravel, FaNextJs } from 'react-icons/fa';
 import { RiNextjsFill } from "react-icons/ri";
 import { SiVite } from "react-icons/si";
+import useMeasure from "react-use-measure"
+import { motion , animate , useMotionValue } from 'framer-motion';
 
 const skills = [
   { name: 'HTML5', status: 'acquired', icon: <FaHtml5 /> },
@@ -19,7 +21,28 @@ const skills = [
   { name: 'Vite.js', status: 'acquired', icon: <SiVite /> },
 ];
 
+
+
 export const TechSection = () => {
+
+  let [ref, { width }] = useMeasure();
+  const xTranslation = useMotionValue(0);
+
+  useEffect(() => {
+    let controls;
+    let finalPosition = -width / 2 - 8;
+
+    controls = animate(xTranslation, [0, finalPosition], {
+      ease: "linear",
+      duration: 25,
+      repeat: Infinity,
+      repeatType: "loop",
+      repeatDelay: 0
+    });
+
+    return controls.stop;
+  }, [xTranslation, width]);
+
   return (
     <section className="my-12">
       <h2 className="text-4xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">Tech Skills</h2>
@@ -35,8 +58,8 @@ export const TechSection = () => {
           </div>
         </div>
         <div className="animate-scroll">
-          <div className="animate-scroll-content scroll-container flex space-x-4">
-            {skills.map((skill, index) => (
+          <motion.div className="animate-scroll-content scroll-container flex space-x-4" ref={ref} style={{x: xTranslation}}>
+            {skills.concat(skills).map((skill, index) => (
               <div
                 key={index}
                 className={`p-4 rounded-lg text-white flex flex-col items-center ${
@@ -49,7 +72,7 @@ export const TechSection = () => {
                 <span className="text-sm font-medium">{skill.name}</span>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

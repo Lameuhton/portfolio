@@ -36,12 +36,10 @@ body {
   }
 }
 
+
 .animate-scroll {
   display: flex;
+  white-space: nowrap;
   overflow: hidden;
 }
 
-.scroll-container {
-  display: flex;
-  animation: scroll 20s linear infinite;
-}
