@@ -7,9 +7,8 @@ Repository of my personal portfolio.
 - Javascript
 - React
 - Next.js
-- Node.js
 - Tailwind
-- Resend API for contact form
+- Fromspree for contact form
 
 Made by Auréliane Gagliardi
 
