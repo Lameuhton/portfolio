@@ -44,7 +44,7 @@ export const TechSection = () => {
   }, [xTranslation, width]);
 
   return (
-    <section className="my-12">
+    <section className="my-12" id="techskills">
       <h2 className="text-4xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">Tech Skills</h2>
       <div className="mx-auto max-w-4xl p-6 bg-[#181818] rounded-lg shadow-lg">
         <div className="flex justify-between mb-4">

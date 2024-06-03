@@ -41,7 +41,7 @@ export const ProjectsSection = () => {
     }
 
     return (
-        <section>
+        <section id="projects">
             <h2 className='text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-4 mb-8 md:mb-12'>My projects</h2>
             <ul ref={ref} className='grid md:grid-cols-3 gap-8 md:gap-12'>
                 {projectsData.map((project, index) => (
