@@ -6,6 +6,14 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Auréliane G. | Portfolio",
   description: "Personal portfolio of Auréliane Gagliardi",
+  icons: {
+    icon: [
+      {
+        url: '/images/favicon.ico',
+        href: '/images/favicon.ico',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
