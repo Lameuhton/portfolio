@@ -2,7 +2,7 @@
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaSass, FaJs, FaReact, FaNodeJs, FaPython, FaPhp, FaDatabase, FaLaravel, FaNextJs } from 'react-icons/fa';
 import { RiNextjsFill } from "react-icons/ri";
-import { SiTypescript } from "react-icons/si";
+import { SiVite } from "react-icons/si";
 
 const skills = [
   { name: 'HTML5', status: 'acquired', icon: <FaHtml5 /> },
@@ -16,22 +16,22 @@ const skills = [
   { name: 'PHP', status: 'acquired', icon: <FaPhp /> },
   { name: 'Laravel', status: 'inprogress', icon: <FaLaravel /> },
   { name: 'Next.js', status: 'inprogress', icon: <RiNextjsFill /> },
-  { name: 'Typescript', status: 'inprogress', icon: <SiTypescript /> },
+  { name: 'Vite.js', status: 'acquired', icon: <SiVite /> },
 ];
 
 export const TechSection = () => {
   return (
     <section className="my-12">
       <h2 className="text-4xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">Tech Skills</h2>
-      <div className="mx-auto max-w-4xl p-6 bg-[#181818] rounded-lg border border-gray-700 shadow-lg">
+      <div className="mx-auto max-w-4xl p-6 bg-[#181818] rounded-lg shadow-lg">
         <div className="flex justify-between mb-4">
           <div className="flex items-center">
             <span className="w-4 h-4 bg-primary-500 inline-block rounded-full mr-2"></span>
-            <span className="text-white">Acquired</span>
+            <span className="text-white font-semibold">Acquired</span>
           </div>
           <div className="flex items-center">
             <span className="w-4 h-4 bg-secondary-500 inline-block rounded-full mr-2"></span>
-            <span className="text-white">In Progress</span>
+            <span className="text-white font-semibold">In Progress</span>
           </div>
         </div>
         <div className="animate-scroll">
