@@ -36,10 +36,28 @@ body {
   }
 }
 
-
 .animate-scroll {
   display: flex;
   white-space: nowrap;
   overflow: hidden;
 }
 
+/* Custom scrollbar styles */
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #ff66b2 #121212;
+}
+
+.scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ff66b2;
+  border-radius: 10px;
+  border: 2px solid #121212;
+}
