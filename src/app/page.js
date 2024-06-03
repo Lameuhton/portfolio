@@ -45,8 +45,8 @@ export default function Home() {
         <TechSection />
         <ProjectsSection />
         <EmailSection />
-        <Footer />
       </div>
+      <Footer />
     </main>
   );
 }
