@@ -26,6 +26,7 @@ const navLinks = [
 
 export const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
+    const [activePage, setActivePage] = useState(false);
 
     return (
         <nav className='fixed mx-auto border-b border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'> 
@@ -47,7 +48,7 @@ export const Navbar = () => {
                     <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0'>
                         {navLinks.map((link, index) =>(
                             <li key={index}>
-                                <NavLink href={link.path} title={link.title} />
+                                <NavLink href={link.path} title={link.title} isActive={link.path === activePage} setActivePage={setActivePage} />
                             </li>
                         ))}
                     </ul>

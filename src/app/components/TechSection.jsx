@@ -50,11 +50,11 @@ export const TechSection = () => {
         <div className="flex justify-between mb-4">
           <div className="flex items-center">
             <span className="w-4 h-4 bg-primary-500 inline-block rounded-full mr-2"></span>
-            <span className="text-white font-semibold">Acquired</span>
+            <span className="text-white font-semibold">Acquis</span>
           </div>
           <div className="flex items-center">
             <span className="w-4 h-4 bg-secondary-500 inline-block rounded-full mr-2"></span>
-            <span className="text-white font-semibold">In Progress</span>
+            <span className="text-white font-semibold">En cours</span>
           </div>
         </div>
         <div className="animate-scroll">

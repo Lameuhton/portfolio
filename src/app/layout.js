@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Auréliane G. | Portfolio",
-  description: "Personal portfolio of Auréliane Gagliardi",
+  description: "Portfolio personnel d'Auréliane Gagliardi",
   icons: {
     icon: [
       {
@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={inter.className}>{children}</body>
     </html>
   );

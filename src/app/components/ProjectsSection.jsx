@@ -7,24 +7,24 @@ import { motion, useInView } from "framer-motion"
 const projectsData = [
     {
         id: 1,
-        title: "Game catalog website",
-        description: "This was a group project, and it is a website that consolidates all video games using an API for game data, allowing users to sort games by genre, platform, etc., or search through a search bar. Made with SCSS, React and with the API of RAWG.",
+        title: "Catalogue de jeux",
+        description: "Il s'agit d'un projet de groupe, c'est un site web qui regroupe tous les jeux vidéo en utilisant une API pour les données de jeu, permettant aux utilisateurs de trier les jeux par genre, plateforme, etc., ou de les rechercher via une barre de recherche. Réalisé avec SCSS, React et avec l'API de RAWG.",
         image: "/images/projet-bestgamez.png",
         gitUrl: "https://github.com/Junior-dev-Track/16-react-everyonegames-christophe-aureliane",
         previewUrl: "https://bestgamez.netlify.app/"
     },
     {
         id: 2,
-        title: "Todolist App",
-        description: "I made an interactive Todo List that displays the remaining number of tasks, allows modification and deletion of tasks, and retains added tasks when the page is reloaded or closed. All that made with React, using the local storage to store the tasks.",
+        title: "Application Todolist",
+        description: "J'ai réalisé une liste de tâches interactive qui affiche le nombre restant de tâches, permet la modification et la suppression de tâches, et conserve les tâches ajoutées lorsque la page est rechargée ou fermée. Tout cela réalisé avec React, en utilisant le local storage pour stocker les tâches.",
         image: "/images/projet-todoapp.png",
         gitUrl: "https://github.com/Junior-dev-Track/16-react-todolist-Lameuhton",
         previewUrl: "https://aurelianegtodolist.netlify.app/"
     },
     {
         id: 3,
-        title: "Responsive home page",
-        description: "This exercise was done independently and aimed to learn how to create a fully responsive page based on a model.",
+        title: "Page d'accueil responsive",
+        description: "Cet exercice a été réalisé de manière indépendante et visait à apprendre à créer une page entièrement responsive basée sur un modèle donné.",
         image: "/images/projet-responsive.png",
         gitUrl: "https://github.com/Lameuhton/responsive-exercice",
         previewUrl: "https://lameuhton.github.io/responsive-exercice/"
@@ -42,7 +42,7 @@ export const ProjectsSection = () => {
 
     return (
         <section id="projects">
-            <h2 className='text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-4 mb-8 md:mb-12'>My projects</h2>
+            <h2 className='text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-4 mb-8 md:mb-12'>Projets</h2>
             <ul ref={ref} className='grid md:grid-cols-3 gap-8 md:gap-12'>
                 {projectsData.map((project, index) => (
                     <motion.li key={index} variants={cardVariants} inital="initial" animate={isInView ? "animate" : "initial"} transition= {{duration: 0.3, delay: index * 0.4}}>
