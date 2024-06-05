@@ -15,7 +15,6 @@ const NavLink = ({ href, title, isActive, setActivePage  }) => {
         onClick={handleClick}
         >
         {title}
-        {isActive && <div className="h-1 bg-primary-500 rounded-t-md"></div>}
         </motion.a>
     </Link>
     );

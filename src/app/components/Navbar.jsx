@@ -7,7 +7,7 @@ import MenuOverlay from './MenuOverlay';
 
 const navLinks = [
     {
-        title: "About",
+        title: "À propos",
         path: "/"
     },
     {
@@ -48,7 +48,7 @@ export const Navbar = () => {
                     <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0'>
                         {navLinks.map((link, index) =>(
                             <li key={index}>
-                                <NavLink href={link.path} title={link.title} isActive={link.path === activePage} setActivePage={setActivePage} />
+                                <NavLink href={link.path} title={link.title} isActive={link.path === activePage}/>
                             </li>
                         ))}
                     </ul>
