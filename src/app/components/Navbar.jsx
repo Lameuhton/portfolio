@@ -51,7 +51,7 @@ export const Navbar = () => {
                                 <ScrollLink
                                     to={link.path}
                                     smooth={true}
-                                    duration={500}
+                                    duration={700}
                                     className='block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white cursor-pointer'
                                 >
                                     {link.title}
