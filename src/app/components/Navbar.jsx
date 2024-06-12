@@ -1,26 +1,26 @@
 "use client";
 import Link from 'next/link';
 import React, { useState } from "react";
-import NavLink from './NavLink';
+import { Link as ScrollLink } from 'react-scroll';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from './MenuOverlay';
 
 const navLinks = [
     {
         title: "About",
-        path: "/"
+        path: "about"
     },
     {
         title: "Tech skills",
-        path: "#techskills"
+        path: "techskills"
     },
     {
         title: "Projects",
-        path: "#projects"
+        path: "projects"
     },
     {
         title: "Contact",
-        path: "#contact"
+        path: "contact"
     }
 ]
 
@@ -45,9 +45,16 @@ export const Navbar = () => {
                 </div>
                 <div className='menu hidden md:block md:w-auto' id="navbar">
                     <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0'>
-                        {navLinks.map((link, index) =>(
+                        {navLinks.map((link, index) => (
                             <li key={index}>
-                                <NavLink href={link.path} title={link.title} />
+                                <ScrollLink
+                                    to={link.path}
+                                    smooth={true}
+                                    duration={500}
+                                    className='block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white cursor-pointer'
+                                >
+                                    {link.title}
+                                </ScrollLink>
                             </li>
                         ))}
                     </ul>
