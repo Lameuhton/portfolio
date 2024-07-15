@@ -65,7 +65,7 @@ portfolio/
 
 ## 🎨 Preview
 
-![Portfolio Screenshot](https://github.com/Lameuhton/portfolio/blob/b3988e3e258f6231ba6c187e2b298f0e7e22f602/Homepage.png)
+[![Portfolio Screenshot](https://github.com/Lameuhton/portfolio/blob/b3988e3e258f6231ba6c187e2b298f0e7e22f602/Homepage.png)](http://aurelianeg.tech)
 
 ## 🧑‍💻 Author
 
