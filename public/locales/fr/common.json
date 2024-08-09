@@ -1,0 +1,28 @@
+{
+  "HeroDescription": "Une jeune femme curieuse, créative et motivée, actuellement en formation chez BeCode",
+  "HeroBtn1": "Me recruter",
+  "HeroBtn2": "Télécharger mon CV",
+  "Section2Title": "À propos",
+  "Section2Description": "Intéressée par l'informatique depuis mon enfance, j'ai exploré ses divers aspects pendant des années, mais c'est dans le développement web que j'ai trouvé ma voie. Toujours en quête d'amélioration, j'aime apprendre de nouveaux langages/framework. J'ai d'ailleurs la chance d'effectuer un stage de 3 mois début septembre chez l'entreprise Webecode à Liège.",
+  "Section2Tab1": "J'ai suivi des études en Informatique de gestion et en Cybersécurité (HEPL et Helmo), mais la méthode traditionnelle d'étude ne me convenait pas. J'ai découvert BeCode, qui propose une approche pédagogique active avec des projets pratiques similaires au monde professionnel, en groupe ou individuellement. Cette méthode m'a permis d'apprendre rapidement et d'améliorer mes compétences. Nous avons récemment terminé un projet de site e-commerce et j'ai commencé à apprendre Wordpress avec ACF",
+  "Section2Tab2": [
+    "Travail d'équipe",
+    "Empathique",
+    "Créative",
+    "Curieuse",
+    "Attentive au détail"
+  ],
+  "Section2Tab3": ["Jeux vidéos", "Chant", "Coder", "Faire du sport", "Lire"],
+  "Section3Title1": "Acquis",
+  "Section3Title2": "En cours",
+  "Section4Title": "Projets",
+  "Section4Projects": [["Craftify - site eCommerce", "Ce projet de groupe propose un site e-commerce pour les artisans, offrant une plateforme pour exposer et vendre des produits faits main. Conçu avec React, Tailwind, Express et Node.js, le site garantit une interface intuitive et une infrastructure solide. Les fonctionnalités incluent la gestion des articles, des paniers et des profils utilisateurs."],["Catalogue de jeux", "Il s'agit d'un projet de groupe, c'est un site web qui regroupe tous les jeux vidéo en utilisant une API pour les données de jeu, permettant aux utilisateurs de trier les jeux par genre, plateforme, etc., ou de les rechercher via une barre de recherche. Réalisé avec SCSS, React et avec l'API de RAWG."],["Application Todolist","J'ai réalisé une liste de tâches interactive qui affiche le nombre restant de tâches, permet la modification et la suppression de tâches, et conserve les tâches ajoutées lorsque la page est rechargée ou fermée. Tout cela réalisé avec React, en utilisant le local storage pour stocker les tâches."],["Page d'accueil responsive","Cet exercice a été réalisé de manière indépendante et visait à apprendre à créer une page entièrement responsive basée sur un modèle donné avec uniquement du HTML et CSS."]],
+  "Section5Description": "Je suis toujours ouverte à de nouvelles opportunités afin de mettre en pratique mes compétences et évoluer. N'hésitez pas à me contacter pour des propositions ou collaborations, je reviendrai vers vous au plus vite! Vous pouvez me joindre via ce formulaire ou à l'adresse",
+  "Section5Title1": "Votre email",
+  "Section5Title2": "Sujet",
+  "Section5Description2": "Sujet de votre message...",
+  "Section5Title3": "Message",
+  "Section5Description3": "Décrivez votre message ici...",
+  "Section5Btn": "Envoyer",
+  "Footer": "Fait avec React, Next.js, Tailwind, Formspree"
+}
