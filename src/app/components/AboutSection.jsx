@@ -57,7 +57,7 @@ export const AboutSection = () => {
               <div className='text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mb-4'>À propos</h2>
                 <p className='text-base md:text-lg'>
-                Intéressée par l'informatique depuis mon enfance, j'ai exploré ses divers aspects pendant des années. Mes études supérieures m'ont apporté des connaissances générales dans divers domaines de l'informatique, mais c'est dans le développement web que j'ai trouvé ma voie. Après des recherches, j'ai choisi BeCode pour devenir développeuse front-end. Toujours en quête d'amélioration, je suis à la recherche d'un stage débutant en septembre pour une durée de 3 mois afin d'appliquer mes compétences et créer des expériences utilisateur mémorables. Construisons ensemble un avenir numérique inspirant !
+                Intéressée par l'informatique depuis mon enfance, j'ai exploré ses divers aspects pendant des années, mais c'est dans le développement web que j'ai trouvé ma voie. Toujours en quête d'amélioration, j'aime apprendre de nouveaux langages/framework. J'ai d'ailleurs la chance d'effectuer un stage de 3 mois début septembre chez Webecode.
                 </p>
               </div>
               

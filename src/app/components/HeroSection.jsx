@@ -18,8 +18,6 @@ const HeroSection = () => {
                             1200,
                             ' a Jr Front-end developer',
                             1200,
-                            'looking for an internship',
-                            1200
                         ]}
                         wrapper="span"
                         speed={40}
