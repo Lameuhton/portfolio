@@ -12,9 +12,11 @@ import {
   FaDatabase,
   FaLaravel,
   FaNextJs,
+  FaFigma,
+  FaWordpress,
 } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiVite } from "react-icons/si";
+import { SiVite, SiTailwindcss } from "react-icons/si";
 import useMeasure from "react-use-measure";
 import { motion, animate, useMotionValue } from "framer-motion";
 
@@ -22,15 +24,17 @@ const skills = [
   { name: "HTML5", status: "acquired", icon: <FaHtml5 /> },
   { name: "CSS3", status: "acquired", icon: <FaCss3Alt /> },
   { name: "SCSS", status: "acquired", icon: <FaSass /> },
+  { name: "Tailwind", status: "acquired", icon: <SiTailwindcss /> },
   { name: "JavaScript", status: "acquired", icon: <FaJs /> },
+  { name: "PHP", status: "acquired", icon: <FaPhp /> },
   { name: "React", status: "inprogress", icon: <FaReact /> },
-  { name: "Node.js", status: "acquired", icon: <FaNodeJs /> },
+  { name: "Wordpress", status: "inprogress", icon: <FaWordpress /> },
   { name: "SQL", status: "acquired", icon: <FaDatabase /> },
   { name: "Python", status: "acquired", icon: <FaPython /> },
-  { name: "PHP", status: "acquired", icon: <FaPhp /> },
   { name: "Laravel", status: "inprogress", icon: <FaLaravel /> },
   { name: "Next.js", status: "inprogress", icon: <RiNextjsFill /> },
   { name: "Vite.js", status: "acquired", icon: <SiVite /> },
+  { name: "Figma", status: "acquired", icon: <FaFigma /> },
 ];
 
 export const TechSection = () => {
