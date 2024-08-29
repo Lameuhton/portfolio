@@ -30,7 +30,7 @@ const projectsData = [
     description:
       "J'ai réalisé une liste de tâches interactive qui affiche le nombre restant de tâches, permet la modification et la suppression de tâches, et conserve les tâches ajoutées lorsque la page est rechargée ou fermée. Tout cela réalisé avec React, en utilisant le local storage pour stocker les tâches.",
     image: "/images/projet-todoapp.png",
-    gitUrl: "https://github.com/Junior-dev-Track/16-react-todolist-Lameuhton",
+    gitUrl: "https://github.com/Lameuhton/todoapp",
     previewUrl: "https://aurelianegtodolist.netlify.app/",
   },
   {
