@@ -8,36 +8,45 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <p className='pl-4 ml-2 border-l-4 border-l-primary-500'>J'ai suivi des études en Informatique de gestion et en Cybersécurité (HEPL et Helmo), mais la méthode traditionnelle d'étude ne me convenait pas. J'ai découvert BeCode, qui propose une approche pédagogique active avec des projets pratiques similaires au monde professionnel, en groupe ou individuellement. Cette méthode m'a permis d'apprendre rapidement et d'améliorer mes compétences. Nous avons récemment commencé un projet de site e-commerce pour approfondir mes connaissances en React, Next.js et Tailwind.</p>
-    )
+      <p className="pl-4 ml-2 border-l-4 border-l-primary-500">
+        Après avoir suivi des études d'informatique de gestion et de
+        cybersécurité, je me suis rendue compte que la méthode traditionnelle
+        d'étude ne me convenait pas. J'ai découvert BeCode, un bootcamp
+        proposant une pédagogie active basée sur des projets pratiques, ce qui
+        m'a permis de progresser et d'améliorer mes compétences rapidement.
+        Actuellement, je termine mon stage de 3 mois dans l'agence web{" "}
+        <a href="https://www.webecode.be/" className="text-primary-500 hover:underline">Webecode</a> et suis donc à la
+        recherche de nouvelles opportunités professionnelles.
+      </p>
+    ),
   },
   {
     title: "Soft Skills",
     id: "softskills",
     content: (
-      <ul className='marker:text-primary-500 list-outside list-disc ml-6'>
+      <ul className="marker:text-primary-500 list-outside list-disc ml-6">
         <li>Travail d'équipe</li>
         <li>Empathique</li>
         <li>Créative</li>
         <li>Curieuse</li>
         <li>Attentive au détail</li>
       </ul>
-    )
+    ),
   },
   {
     title: "Hobbies",
     id: "hobbies",
     content: (
-      <ul className='marker:text-primary-500 list-outside list-disc ml-6'>
+      <ul className="marker:text-primary-500 list-outside list-disc ml-6">
         <li>Jeux vidéos</li>
         <li>Chant</li>
         <li>Coder</li>
         <li>Faire du sport</li>
         <li>Lire</li>
       </ul>
-    )
-  }
-]
+    ),
+  },
+];
 
 export const AboutSection = () => {
   const [tab, setTab] = useState("education");
@@ -51,7 +60,7 @@ export const AboutSection = () => {
 
   return (
     <section className='text-white mt-10' id="about">
-        <div className='flex flex-wrap lg:flex-nowrap gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+        <div className='flex flex-wrap lg:flex-nowrap gap-8 items-center py-8 xl:gap-16 sm:py-16 xl:px-16'>
             <Image src="/images/about-image.png" width={500} height={500} className='rounded-3xl' />
             <div className='mt-3 md:mt-0 text-left flex flex-col h-full'>
               <div className='text-left flex flex-col h-full'>

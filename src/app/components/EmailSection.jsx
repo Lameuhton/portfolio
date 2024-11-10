@@ -20,7 +20,7 @@ import { useForm, ValidationError } from '@formspree/react';
         <h2 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-4 mb-8 md:mb-12'>Let's Connect</h2>
         <p className='text-[#ADB7BE] mb-4 max-w-md'>
           {" "}
-          Je suis à la recherche de nouvelles opportunités de stage pour mettre en pratique mes compétences et évoluer. N'hésitez pas à me contacter pour des propositions, je reviendrai vers vous au plus vite. Vous pouvez me joindre via ce formulaire ou à l'adresse <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600'>aurelianeg2000@gmail.com</span>
+          Je suis à la recherche de nouvelles opportunités professionnelles pour mettre en pratique mes compétences et évoluer. N'hésitez pas à me contacter pour des propositions, je reviendrai vers vous au plus vite. Vous pouvez me joindre via ce formulaire ou à l'adresse <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600'>aurelianeg2000@gmail.com</span>
         </p>
 
         <div className='socials flex flex-row gap-2'>
