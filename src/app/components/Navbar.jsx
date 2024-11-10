@@ -41,16 +41,42 @@ export const Navbar = () => {
             {!navbarOpen ? (
               <button
                 onClick={() => setNavbarOpen(true)}
-                className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+                className="flex items-center px-3 py-2 text-slate-200 hover:text-white hover:border-white"
               >
-                <Bars3Icon className="h-5 w-5" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
               </button>
             ) : (
               <button
                 onClick={() => setNavbarOpen(false)}
-                className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+                className="flex items-center px-3 py-2 text-slate-200 hover:text-white hover:border-white"
               >
-                <XMarkIcon className="h-5 w-5" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
               </button>
             )}
           </div>
