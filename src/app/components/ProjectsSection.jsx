@@ -30,8 +30,8 @@ const projectsData = [
     id: 3,
     title: "Site de la Sandwicherie Deliziosa",
     description:
-      "Application interactive de gestion de tâches permettant de visualiser, ajouter, modifier et supprimer des tâches, tout en conservant celles-ci après la fermeture de l'application. L'interface conviviale permet de suivre efficacement les tâches à accomplir, offrant une meilleure organisation et productivité.",
-    image: "/images/projet-todoapp.png",
+      "Projet réalisé entièrement par moi-même pour une connaissance, ce site vitrine présente de manière attrayante les services et produits de la sandwicherie. Avec un design moderne et une navigation fluide, le site permet aux clients de découvrir le menu et de commander facilement, tout en garantissant une expérience utilisateur optimisée.",
+    image: "/images/projet-sandwicherie.png",
     tag: ["All", "Next", "Tailwind"],
     gitUrl: "https://github.com/Lameuhton/todoapp",
     previewUrl: "https://aurelianegtodolist.netlify.app/",
@@ -150,6 +150,7 @@ export const ProjectsSection = () => {
               inital="initial"
               animate={isInView ? "animate" : "initial"}
               transition={{ duration: 0.3, delay: index * 0.4 }}
+              className="h-full"
             >
               <ProjectCard
                 key={project.id}

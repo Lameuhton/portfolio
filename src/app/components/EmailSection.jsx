@@ -20,7 +20,7 @@ import { useForm, ValidationError } from '@formspree/react';
         <h2 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-4 mb-8 md:mb-12'>Let's Connect</h2>
         <p className='text-[#ADB7BE] mb-4 max-w-md'>
           {" "}
-          Je suis à la recherche de nouvelles opportunités professionnelles pour mettre en pratique mes compétences et évoluer. N'hésitez pas à me contacter pour des propositions, je reviendrai vers vous au plus vite. Vous pouvez me joindre via ce formulaire ou à l'adresse <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600'>aurelianeg2000@gmail.com</span>
+          Je suis à la recherche de nouvelles opportunités professionnelles pour mettre en pratique mes compétences et évoluer. N'hésitez pas à me contacter pour des propositions, je reviendrai vers vous au plus vite. Vous pouvez me joindre via ce formulaire ou à l'adresse <a href="mailto:aurelianeg2000@gmail.com" className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 hover:underline'>aurelianeg2000@gmail.com</a>
         </p>
 
         <div className='socials flex flex-row gap-2'>
@@ -48,7 +48,7 @@ import { useForm, ValidationError } from '@formspree/react';
             <label htmlFor="message" className='text-white block mb-2 text-sm font-medium'>Message</label>
             <textarea name="message" id="message" className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 place" required placeholder='Décrivez votre message ici...'></textarea>
           </div>
-          <button type='submit' className='bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full'>Envoyer</button>
+          <button type='submit' className='bg-primary-500 hover:bg-primary-600 duration-150 text-white font-medium py-2.5 px-5 rounded-lg w-full'>Envoyer</button>
         </form>
       </div>
     </section>

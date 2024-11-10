@@ -32,8 +32,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg  mb-6 lg:text-xl">
-            Une jeune femme curieuse, créative et motivée, actuellement en
-            formation chez BeCode
+            Une jeune femme curieuse, créative et motivée, et à la recherche de nouvelles opportunités professionnelles
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white">
