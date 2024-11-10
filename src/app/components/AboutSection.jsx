@@ -59,31 +59,57 @@ export const AboutSection = () => {
   };
 
   return (
-    <section className='text-white mt-10' id="about">
-        <div className='flex flex-wrap lg:flex-nowrap gap-8 items-center py-8 xl:gap-16 sm:py-16 xl:px-16'>
-            <Image src="/images/about-image.png" width={500} height={500} className='rounded-3xl' />
-            <div className='mt-3 md:mt-0 text-left flex flex-col h-full'>
-              <div className='text-left flex flex-col h-full'>
-                <h2 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mb-4'>À propos</h2>
-                <p className='text-base md:text-lg'>
-                Intéressée par l'informatique depuis mon enfance, j'ai exploré ses divers aspects pendant des années, mais c'est dans le développement web que j'ai trouvé ma voie. Toujours en quête d'amélioration, j'aime apprendre de nouveaux langages/framework. J'ai d'ailleurs la chance d'effectuer un stage de 3 mois début septembre chez Webecode.
-                </p>
-              </div>
-              
-              <div className='text-left flex flex-col h-full'>
-                <div className='flex flex-row mt-8'>
-                  <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Formation</TabButton>
-                  <TabButton selectTab={() => handleTabChange("softskills")} active={tab === "softskills"}>Softskills</TabButton>
-                  <TabButton selectTab={() => handleTabChange("hobbies")} active={tab === "hobbies"}>Hobby's</TabButton>
-                </div>
-                <div className='mt-8 card'>
-                  {TAB_DATA.find((t) => t.id === tab).content}
-                </div>
-              </div>  
+    <section className="text-white mt-10" id="about">
+      <div className="flex flex-wrap lg:flex-nowrap gap-8 items-center py-8 xl:gap-16 sm:py-16 xl:px-16">
+        <Image
+          src="/images/about-image.png"
+          width={500}
+          height={500}
+          className="rounded-3xl"
+        />
+        <div className="mt-3 md:mt-0 text-left flex flex-col h-full">
+          <div className="text-left flex flex-col h-full">
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mb-4">
+              À propos
+            </h2>
+            <p className="text-base md:text-lg">
+              Passionnée par l'informatique et le développement web, j'allie
+              créativité et logique pour relever des défis et améliorer mes
+              compétences. Curieuse et déterminée, j'ai acquis un sens du détail
+              et une grande adaptabilité. Je recherche actuellement un <span class="text-primary-400">poste de
+              développeuse web</span>, notamment en front-end, pour contribuer à des
+              projets innovants.
+            </p>
+          </div>
+
+          <div className="text-left flex flex-col h-full">
+            <div className="flex flex-row mt-8">
+              <TabButton
+                selectTab={() => handleTabChange("education")}
+                active={tab === "education"}
+              >
+                Formation
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("softskills")}
+                active={tab === "softskills"}
+              >
+                Softskills
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("hobbies")}
+                active={tab === "hobbies"}
+              >
+                Hobby's
+              </TabButton>
             </div>
+            <div className="mt-8 card">
+              {TAB_DATA.find((t) => t.id === tab).content}
+            </div>
+          </div>
         </div>
-        
+      </div>
     </section>
-  )
+  );
 }
 
