@@ -13,8 +13,8 @@ const projectsData = [
       "Réalisé lors de mon stage chez Webecode, ce site vitrine présente les services du Dr. François Bernaerts, médecin généraliste homéopathe. L'interface intuitive permet aux patients de consulter les informations et de prendre rendez-vous en ligne, améliorant l'accessibilité et l'expérience utilisateur.",
     image: "/images/projet-docteur.png",
     tag: ["All", "Wordpress", "Tailwind"],
-    gitUrl: "https://github.com/YasmineSan/The_Project",
-    previewUrl: "https://ecommerce-craftify.netlify.app/",
+    gitUrl: "#",
+    previewUrl: "https://www.docteur.webecode.be/",
   },
   {
     id: 2,
@@ -33,8 +33,8 @@ const projectsData = [
       "Projet réalisé entièrement par moi-même pour une connaissance, ce site vitrine présente de manière attrayante les services et produits de la sandwicherie. Avec un design moderne et une navigation fluide, le site permet aux clients de découvrir le menu et de commander facilement, tout en garantissant une expérience utilisateur optimisée.",
     image: "/images/projet-sandwicherie.png",
     tag: ["All", "Next", "Tailwind"],
-    gitUrl: "https://github.com/Lameuhton/todoapp",
-    previewUrl: "https://aurelianegtodolist.netlify.app/",
+    gitUrl: "https://github.com/Lameuhton/sandwicherie-deliziosa",
+    previewUrl: "#",
   },
   {
     id: 4,
